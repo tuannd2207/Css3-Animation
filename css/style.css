@@ -1,0 +1,278 @@
+body{
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.wrapper{
+  background: #F2F3F5;
+  width: 90%;
+  margin: 0 auto;
+  padding: 53px 38px;
+}
+.content-container{
+  text-align: center;
+  overflow: hidden;
+}
+
+.content-container h1{
+  font-weight: 500;
+  font-size: 2.3rem;
+  animation: heading 3s;
+}
+.content-container p{
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.3rem;
+  padding: .3rem 2rem;
+  line-height: 1.9rem;
+  animation: content 3s;
+}
+.card-container{
+  display: flex;
+  justify-content: space-between;
+}
+.card-container .card{
+  padding: 2px 31px;
+}
+.card-container .card-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 221px;
+  background-color: #91E0E6;
+  width: 100%;
+}
+.card-container .card-header h3{
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+  animation: web 4555ms;
+}
+.card-container .card-body{
+  background-color: white;
+}
+.card-container .card-body .p{
+  margin: 0;
+  padding:1rem;
+  font-size: 1.5rem;
+}
+.card-container .card-body .text{
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  margin: 0;
+  padding:1rem;
+  line-height: 1.6rem;
+}
+.card1{
+  animation: card1 1400ms;
+}
+.card2{
+  animation: card2 2s;
+}
+.card3{
+  animation: card3 3s;
+}
+.p1{
+  animation: p1 1400ms;
+}
+.p2{
+  animation: p2 2s;
+}
+.p3{
+  animation: p3 3s;
+}
+.text1{
+  animation: text1 1400ms;
+}
+.text2{
+  animation: text2 2s;
+}
+.text3{
+  animation: text3 3s;
+}
+
+.ball-container{
+  height: 400px;
+  width: 65%;
+  margin: 1.2rem auto;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.ball{
+  height: 30px;
+  width: 30px;
+  background: radial-gradient(circle at 65% 15%, white 1px, aqua 3%, darkblue 60%, aqua 100%);
+  display: flex;
+  color: white;
+  margin-top:auto;
+  border-radius: 50%;
+  animation: manhnd 2s ease 0s infinite;
+}
+.ball-1{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  color: white;
+  background-color: red;
+  margin-top:auto;
+  border-radius: 50%;
+  animation: manhnd 3s ease 0s infinite alternate;
+}
+.ball-2{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  color: white;
+  background-color: yellow;
+  margin-top:auto;
+  border-radius: 50%;
+  animation: manhnd 3s ease 0s infinite alternate;
+}
+.ball-3{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  color: white;
+  background-color: green;
+  margin-top:auto;
+  border-radius: 50%;
+  animation: manhnd 2s ease 0s infinite;
+}
+.ball span{
+  margin: auto;
+}
+@keyframes card1 {
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes card2 {
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes card3 {
+  from{
+    opacity: 0;
+    transform: scale(0);
+  }
+  to{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes heading {
+  from{
+    margin-right: 80%;
+    opacity: 0;
+  }
+  to{
+    margin-right:0;
+    opacity: 1;
+  }
+}
+@keyframes content {
+  from{
+    margin-right: -30%;
+    opacity: 0;
+  }
+  to{
+    margin-right:0;
+    opacity: 1;
+  }
+}
+@keyframes web {
+  from{
+    margin-left: -100%;
+    opacity: 0;
+  }
+  to{
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+@keyframes p1 {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes p2 {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes p3 {
+  from{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes text1 {
+  from{
+    transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotateY(0deg);;
+    opacity: 1;
+  }
+}
+@keyframes text2 {
+  from{
+    transform: rotateY(360deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotateY(0deg);;
+    opacity: 1;
+  }
+}
+@keyframes text3 {
+  from{
+    transform: rotateY(360deg);
+    opacity: 0;
+  }
+  to{
+    transform: rotateY(0deg);;
+    opacity: 1;
+  }
+}
+@keyframes manhnd {
+  0%{
+      -moz-transform: rotateZ(0deg);
+      -webkit-transform: rotateZ(0deg);
+      -o-transform: rotateZ(0deg);
+      -ms-transform: rotateZ(0deg);
+      }
+      100%{
+      -moz-transform: rotateZ(360deg);
+      -webkit-transform: rotateZ(360deg);
+      -o-transform: rotateZ(360deg);
+      -ms-transform: rotateZ(360deg);
+      }
+}
